@@ -1,0 +1,7 @@
+D:\Distrib\Adel\Прога\Lesson_28.10\Tymakov_8\bin\Debug\Tymakov_8.exe.config
+D:\Distrib\Adel\Прога\Lesson_28.10\Tymakov_8\bin\Debug\Tymakov_8.exe
+D:\Distrib\Adel\Прога\Lesson_28.10\Tymakov_8\bin\Debug\Tymakov_8.pdb
+D:\Distrib\Adel\Прога\Lesson_28.10\Tymakov_8\obj\Debug\Tymakov_8.csproj.AssemblyReference.cache
+D:\Distrib\Adel\Прога\Lesson_28.10\Tymakov_8\obj\Debug\Tymakov_8.csproj.CoreCompileInputs.cache
+D:\Distrib\Adel\Прога\Lesson_28.10\Tymakov_8\obj\Debug\Tymakov_8.exe
+D:\Distrib\Adel\Прога\Lesson_28.10\Tymakov_8\obj\Debug\Tymakov_8.pdb
