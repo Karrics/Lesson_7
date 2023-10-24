@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace Tymakov_8
 {
@@ -13,6 +10,24 @@ namespace Tymakov_8
     }
     internal class Program
     {
+        public static bool ImplementsIFormattableIs(object input)
+        {
+            if (input is IFormattable)
+            {
+                return true;
+            }
+
+            return false;
+        }
+        public static bool ImplementsIFormattableAs(object input)
+        {
+            if (input as IFormattable == null)
+            {
+                return false;
+            }
+
+            return true;
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Упр 8.1");
@@ -60,6 +75,32 @@ namespace Tymakov_8
             string input = Console.ReadLine();
             string reversed = Reverse.Reversed(input);
             Console.WriteLine(reversed);
+            Console.WriteLine();
+
+
+            Console.WriteLine("Упр 8.4");
+            Console.WriteLine("Реализовать метод System.IFormattable.");
+            BankAccount ex_account = new BankAccount();
+            if (ImplementsIFormattableIs(ex_account))
+            {
+                Console.WriteLine("Объект реализует интерфейс System.IFormattable");
+            }
+            else
+            {
+                Console.WriteLine("Объект не реализует интерфейс System.IFormattable");
+            }
+            if (ImplementsIFormattableAs(ex_account))
+            {
+                Console.WriteLine("Объект реализует интерфейс System.IFormattable");
+            }
+            else
+            {
+                Console.WriteLine("Объект не реализует интерфейс System.IFormattable");
+            }
+
+
+
+            Console.WriteLine("Для завершения работы нажммите любую клавишу");
             Console.ReadKey();
         }
     }
