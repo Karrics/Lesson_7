@@ -98,7 +98,7 @@ namespace Tymakov_8
             {
                 Console.WriteLine("Объект не реализует интерфейс System.IFormattable");
             }
-
+            Console.WriteLine();
 
 
             Console.WriteLine("Дз 8.2");
@@ -146,6 +146,7 @@ namespace Tymakov_8
                 Console.WriteLine("Первая песня не совпадает со второй песней");
             }
             Console.WriteLine();
+
             Console.WriteLine("Для завершения работы нажммите любую клавишу");
             Console.ReadKey();
         }
