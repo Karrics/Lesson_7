@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace Tymakov_8
@@ -100,6 +101,51 @@ namespace Tymakov_8
 
 
 
+            Console.WriteLine("Дз 8.2");
+            Console.WriteLine("Списки песен");
+            List<Song> songs = new List<Song>();
+
+            // Создание и заполнение первой песни
+            Song song1 = new Song();
+            song1.SetName("Lost in the echo");
+            song1.SetAuthor("Linkin Park");
+            songs.Add(song1);
+
+            // Создание и заполнение второй песни
+            Song song2 = new Song();
+            song2.SetName("Skyfall");
+            song2.SetAuthor("Adele");
+            songs.Add(song2);
+
+            // Создание и заполнение третьей песни
+            Song song3 = new Song();
+            song3.SetName("Bring Me To Life");
+            song3.SetAuthor("Evanescense");
+            songs.Add(song3);
+
+            // Создание и заполнение четвертой песни
+            Song song4 = new Song();
+            song4.SetName("How You Like That");
+            song4.SetAuthor("BLACKPINK");
+            songs.Add(song4);
+
+            // Вывод информации о каждой песне
+            foreach (Song song in songs)
+            {
+                Console.WriteLine(song.Title());
+            }
+
+            Console.WriteLine();
+            // Сравнение первой и второй песни
+            if (song1.Equals(song2))
+            {
+                Console.WriteLine("Первая песня совпадает со второй песней");
+            }
+            else
+            {
+                Console.WriteLine("Первая песня не совпадает со второй песней");
+            }
+            Console.WriteLine();
             Console.WriteLine("Для завершения работы нажммите любую клавишу");
             Console.ReadKey();
         }
