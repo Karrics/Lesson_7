@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tymakov_8", "Tymakov_8.csproj", "{8EC53C95-C871-490B-B4BA-5AFC3BA1F97C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osnova", "..\Osnova\Osnova.csproj", "{FDAA9C10-B1B6-4F86-B3C6-FD170E7DB67B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osnova", "Osnova.csproj", "{FDAA9C10-B1B6-4F86-B3C6-FD170E7DB67B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8EC53C95-C871-490B-B4BA-5AFC3BA1F97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EC53C95-C871-490B-B4BA-5AFC3BA1F97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EC53C95-C871-490B-B4BA-5AFC3BA1F97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EC53C95-C871-490B-B4BA-5AFC3BA1F97C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FDAA9C10-B1B6-4F86-B3C6-FD170E7DB67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FDAA9C10-B1B6-4F86-B3C6-FD170E7DB67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDAA9C10-B1B6-4F86-B3C6-FD170E7DB67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8AD97C06-CD98-494A-A12F-325656693470}
+		SolutionGuid = {ECD54942-EE16-4877-984F-2097266ED20A}
 	EndGlobalSection
 EndGlobal

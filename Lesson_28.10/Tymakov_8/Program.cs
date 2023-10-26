@@ -29,6 +29,17 @@ namespace Tymakov_8
 
             return true;
         }
+        public static string ExtractEmail(string s)
+        {
+            int separatorIndex = s.IndexOf('#');
+            if (separatorIndex != -1)
+            {
+                string email = s.Substring(separatorIndex + 1).Trim();
+                return email;
+            }
+            return string.Empty;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Упр 8.1");
@@ -79,6 +90,30 @@ namespace Tymakov_8
             Console.WriteLine();
 
 
+            Console.WriteLine("Упр 8.3");
+            Console.WriteLine("Перезаписать файл заглавными буквами");
+            Console.WriteLine("Введите путь к файлу");
+            string fileName = Console.ReadLine(); 
+            try
+            {
+                // Чтение содержимого исходного файла
+                string content = File.ReadAllText(fileName);
+
+                // Преобразование содержимого в заглавные буквы
+                string upperCaseContent = content.ToUpper();
+
+                // Запись преобразованного содержимого в выходной файл
+                //File.WriteAllText("D:\\Distrib\\Adel\\Прога\\Lesson_28.10\\Tymakov_8\\OutputFile.txt", upperCaseContent);
+                File.WriteAllText(fileName + "/../OutputFile.txt", upperCaseContent);
+
+                Console.WriteLine("Содержимое записано в выходной файл.");
+            }
+            catch 
+            {
+                Console.WriteLine("Ошибка при чтении или записи файла: ");
+            }
+            Console.WriteLine();
+
             Console.WriteLine("Упр 8.4");
             Console.WriteLine("Реализовать метод System.IFormattable.");
             BankAccount ex_account = new BankAccount();
@@ -100,6 +135,30 @@ namespace Tymakov_8
             }
             Console.WriteLine();
 
+
+            Console.WriteLine("Дз 8.1");
+            Console.WriteLine("Запись email в отдельный файл");
+            Console.WriteLine("Введите полный путь к файлу, где хранятся имена и email сотрудников");
+            string inputFile = Console.ReadLine();
+            string outputFile = inputFile + "/../OnlyEmail.txt";
+
+            // Читаем текстовый файл
+            string[] lines = File.ReadAllLines(inputFile);
+
+            // Создаем новый файл и записываем адреса электронной почты
+            using (StreamWriter writer = new StreamWriter(outputFile))
+            {
+                foreach (string line in lines)
+                {
+                    string email = ExtractEmail(line);
+                    if (!string.IsNullOrEmpty(email))
+                    {
+                        writer.WriteLine(email);
+                    }
+                }
+            }
+            Console.WriteLine("Готово! Список адресов электронной почты записан в файл OnlyEmail.txt");
+            Console.WriteLine();
 
             Console.WriteLine("Дз 8.2");
             Console.WriteLine("Списки песен");

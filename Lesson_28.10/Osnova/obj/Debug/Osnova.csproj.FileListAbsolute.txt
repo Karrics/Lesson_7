@@ -1,0 +1,7 @@
+D:\Distrib\Adel\Прога\Lesson_28.10\Osnova\bin\Debug\Osnova.exe.config
+D:\Distrib\Adel\Прога\Lesson_28.10\Osnova\bin\Debug\Osnova.exe
+D:\Distrib\Adel\Прога\Lesson_28.10\Osnova\bin\Debug\Osnova.pdb
+D:\Distrib\Adel\Прога\Lesson_28.10\Osnova\obj\Debug\Osnova.csproj.AssemblyReference.cache
+D:\Distrib\Adel\Прога\Lesson_28.10\Osnova\obj\Debug\Osnova.csproj.CoreCompileInputs.cache
+D:\Distrib\Adel\Прога\Lesson_28.10\Osnova\obj\Debug\Osnova.exe
+D:\Distrib\Adel\Прога\Lesson_28.10\Osnova\obj\Debug\Osnova.pdb
